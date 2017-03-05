@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px dashed Grey;
+}
+
+footer p {
+  font-family: serif;
+  font-weight: lighter;
+  font-style: italic;
+  color: Grey;
+  font-size: 15px;
+  text-align: center;
+}
+
+header {
+  height: 300;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: White;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  background-color: #932c34;
+
+}
+
+.navi {
+    display: table;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #d2d2d2;
+    border-left: 1px solid #d2d2d2;
+    margin: 5px;
+}
+
+li a {
+    display: block;
+    color: #373737;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgba(221,221,221, 1);
+}

@@ -6,14 +6,23 @@
 }
 
 html {
-  /*background: url("landing_pictures/1.jpg");
+  background: url("landing_pictures/1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; */
+  background-size: cover;
+}
+
+#preloader {
+  position: absolute;
+  overflow: hidden;
+  top: -9999px;
+  left: -9999px;
+  height: 1px;
+  width: 1px;
 }
 
 .body {

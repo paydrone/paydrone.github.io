@@ -5,8 +5,16 @@
   border: 0px dashed White;
 }
 
-html {
-  background: url("landing_pictures/1.jpg");
+#background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ) , url("landing_pictures/1.jpg");
+  background-color: White;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -14,6 +22,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  transition:  linear 1s;
 }
 
 #preloader {
@@ -39,6 +48,8 @@ html {
   left: 50%;
 
   margin: -120px 0 0 -270px;
+
+
 
   font-family: 'Montserrat', sans-serif;
   color: White;

@@ -17,74 +17,12 @@
       <h2><a href="home.html">Home</a></h2>
     </div>
 
+    <!-- Loads next background image to avoid lag -->
     <img id="preloader"></img>
 
-  </body>
 
-  <body onload="main()"></body>
-
-  <script>
-    var darken = "linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),";
-    var i = 0;
-    var toload = 2;
-    var clearTimer;
-
-    document.onkeyup = function myFunction() {
-      switch (event.keyCode) {
-        case 37: // Left Key
-          i = i-2;
-          changeBG();
-          clearInterval(clearTimer);
-          clearTimer = setInterval(changeBG, 3000 );
-          break;
-        case 39: // Right Key
-          i++;
-          changeBG();
-          clearInterval(clearTimer);
-          clearTimer = setInterval(changeBG, 3000 );
-          break;
-        }
-    }
-
-    function main() {
-      changeBG();
-      clearTimer = setInterval(changeBG, 3000 );
-    }
-    function changeBG() {
-
-      //console.log("BEFORE: i = ",i,", toload = ",toload);
-
-
-      if (i === 15) {
-        toload = 1;
-        i = 0;
-      }
-      if ( i < 0 ) {
-        i = 15;
-        toload = 1;
-      }
-      else {
-        i++;
-        toload = i+1;
-      }
-
-      if (toload >= 16) {
-        toload = 1;
-        i = 0;
-      }
-
-      //console.log("AFTER: i = ",i,", toload = ",toload);
-
-      <!-- // Preloads next image -->
-      var preload = document.getElementById("preloader");
-      preload.src = 'landing_pictures/'+(toload).toString()+'.jpg';
-
-      <!-- // Darkens and changes background -->
-      var element = document.getElementById("background");
-      element.style.background = darken + "url(landing_pictures/"+i.toString()+".jpg) no-repeat center center fixed";
-      element.style.backgroundSize = "cover";
-    }
-
+  <script src="landing.js">
+    window.onload = main;
   </script>
 
 

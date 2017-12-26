@@ -4,6 +4,7 @@ html, body {
   overflow: hidden;
   background: rgba(99, 99, 99, 0.15);
   touch-action: none;
+  position: relative; 
 }
 
 .landing-text {

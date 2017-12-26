@@ -1,31 +1,72 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Pedro Rodrigues</title>
 
-  <html>
-    <head>
-      <title>Pedro Rodrigues</title>
-      <link href="landing.css" type="text/css" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
-    </head>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
 
+
+  </head>
   <body>
 
-    <div id="background"></div>
+    <div class="container">
+      <div class="landing-text">
+        <div class="row">
+          <div class="col-lg-4"></div>
 
-    <div class="title">
-      <h1>Pedro Rodrigues</h1>
-      <h3>Photography/Videography/Editing</h3>
-      <h2><a href="home.html">Home</a></h2>
+          <div class="col-lg-4">
+            <h3>Pedro Rodrigues</h3>
+            <h6>Photographer / Software Engineer</h6>
+            <div class="landing-text-buttons">
+              <p>Photo</p>
+              <p>Software</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Loads next background image to avoid lag -->
-    <img id="preloader"></img>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- BackStrech plugin, for backgrounds -->
+    <script src="js/jquery.backstretch.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+
+        $.backstretch([
+            { url: 'landing_pictures/1.jpg' },
+            { url: 'landing_pictures/2.jpg', alignY: .4 },
+            { url: 'landing_pictures/3.jpg', alignY: .3, alignX: .5 },
+            { url: 'landing_pictures/4.jpg' },
+            { url: 'landing_pictures/5.jpg' },
+            { url: 'landing_pictures/6.jpg' },
+            { url: 'landing_pictures/7.jpg' },
+            { url: 'landing_pictures/8.jpg', alignY: .3 },
+            { url: 'landing_pictures/9.jpg' },
+            { url: 'landing_pictures/10.jpg' },
+            { url: 'landing_pictures/11.jpg' },
+            { url: 'landing_pictures/13.jpg' },
+            { url: 'landing_pictures/14.jpg' },
+            { url: 'landing_pictures/15.jpg' }
+          ], {duration: 3000, transition: 'fade', transitionDuration: 1000});
+
+        });
+
+      </script>
 
   </body>
-
-
-  <script src="landing.js">
-    window.onload = main;
-  </script>
-
-
-  </html>
+</html>

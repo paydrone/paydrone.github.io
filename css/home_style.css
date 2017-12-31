@@ -1,0 +1,73 @@
+html, body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+@media (min-width: 768px) {
+            .bootstrap-vertical-nav {
+                margin-top: 50px;
+            }
+}
+
+/* Creates a vertical nav starting at 768px (sm) */
+@media (min-width: 768px) {
+    .bootstrap-vertical-nav .collapse {
+        display: block;
+    }
+}
+
+.bootstrap-vertical-nav {
+  font-family: 'Montserrat', sans-serif;
+  text-transform:uppercase;
+  text-align: center;
+}
+
+.bootstrap-vertical-nav img {
+  height: 150px;
+  padding-bottom: 10px;
+
+}
+
+
+
+/* ---- grid ---- */
+
+.grid {
+
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: calc(50% - 5px);
+  margin-bottom: 5px;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

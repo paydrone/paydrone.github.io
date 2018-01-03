@@ -102,3 +102,33 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/*  remove button styling from bootstrap */
+.btn {
+  border: 0px;
+  border-radius: 0rem;
+}
+
+
+.btn-secondary {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  background-color: #f2f2f2;
+  border-color: #000000;
+}
+
+.btn-secondary:hover {
+  color: black;
+  background-color: #FDFDFD;
+  border-color: #6c757d;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0);
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}

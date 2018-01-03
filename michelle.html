@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/home_style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
 
-
+    <link href="css/lightbox.css" rel="stylesheet">
 
   </head>
   <body>
@@ -34,7 +34,7 @@
                             <a class="nav-link" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="bronwyn.html">Bronwyn</a>
+                            <a class="nav-link" href="michelle.html">michelle</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="kendra.html">Kendra</a>
@@ -66,47 +66,73 @@
 
           <div class="grid">
             <div class="grid-sizer"></div>
-            <div class="grid-item">
-              <img src="images/michelle/1.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/2.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/3.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/4.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/5.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/6.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/7.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/8.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/9.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/10.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/11.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/12.jpg" />
-            </div>
-            <div class="grid-item">
-              <img src="images/michelle/13.jpg" />
-            </div>
 
 
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/1.jpg" data-lightbox="michelle">
+                <img src="images/michelle/1.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/2.jpg" data-lightbox="michelle">
+                <img src="images/michelle/2.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/3.jpg" data-lightbox="michelle">
+                <img src="images/michelle/3.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/4.jpg" data-lightbox="michelle">
+                <img src="images/michelle/4.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/5.jpg" data-lightbox="michelle">
+                <img src="images/michelle/5.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/6.jpg" data-lightbox="michelle">
+                <img src="images/michelle/6.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/7.jpg" data-lightbox="michelle">
+                <img src="images/michelle/7.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/8.jpg" data-lightbox="michelle">
+                <img src="images/michelle/8.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/9.jpg" data-lightbox="michelle">
+                <img src="images/michelle/9.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/10.jpg" data-lightbox="michelle">
+                <img src="images/michelle/10.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/11.jpg" data-lightbox="michelle">
+                <img src="images/michelle/11.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/12.jpg" data-lightbox="michelle">
+                <img src="images/michelle/12.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/michelle_fullsize/13.jpg" data-lightbox="michelle">
+                <img src="images/michelle/13.jpg" />
+              </a>
+            </div>
 
           </div>
 
@@ -122,12 +148,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+    <script src="js/lightbox-plus-jquery.js"></script>
+
     <!-- Plug-ins  -->
     <script src="js/imagesloaded.pkgd.js"></script>
     <script src="js/masonry.pkgd.js"></script>
 
     <!-- Self -->
     <script src="js/home.js"></script>
+
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'showImageNumberLabel': false,
+        'fitImagesInViewport': true,
+
+      })
+    </script>
 
   </body>
 </html>

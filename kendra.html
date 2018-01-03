@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/home_style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
 
-
+    <link href="css/lightbox.css" rel="stylesheet">
 
   </head>
   <body>
@@ -66,26 +66,42 @@
 
           <div class="grid">
             <div class="grid-sizer"></div>
+
+
             <div class="grid-item">
-              <img src="images/kendra/1.jpg" />
+              <a href="images/kendra_fullsize/1.jpg" data-lightbox="kendra">
+                <img src="images/kendra/1.jpg" />
+              </a>
             </div>
             <div class="grid-item">
-              <img src="images/kendra/2.jpg" />
+              <a href="images/kendra_fullsize/2.jpg" data-lightbox="kendra">
+                <img src="images/kendra/2.jpg" />
+              </a>
             </div>
             <div class="grid-item">
-              <img src="images/kendra/3.jpg" />
+              <a href="images/kendra_fullsize/3.jpg" data-lightbox="kendra">
+                <img src="images/kendra/3.jpg" />
+              </a>
             </div>
             <div class="grid-item">
-              <img src="images/kendra/4.jpg" />
+              <a href="images/kendra_fullsize/4.jpg" data-lightbox="kendra">
+                <img src="images/kendra/4.jpg" />
+              </a>
             </div>
             <div class="grid-item">
-              <img src="images/kendra/5.jpg" />
+              <a href="images/kendra_fullsize/5.jpg" data-lightbox="kendra">
+                <img src="images/kendra/5.jpg" />
+              </a>
             </div>
             <div class="grid-item">
-              <img src="images/kendra/6.jpg" />
+              <a href="images/kendra_fullsize/6.jpg" data-lightbox="kendra">
+                <img src="images/kendra/6.jpg" />
+              </a>
             </div>
             <div class="grid-item">
-              <img src="images/kendra/7.jpg" />
+              <a href="images/kendra_fullsize/7.jpg" data-lightbox="kendra">
+                <img src="images/kendra/7.jpg" />
+              </a>
             </div>
 
 
@@ -103,12 +119,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+    <script src="js/lightbox-plus-jquery.js"></script>
+
     <!-- Plug-ins  -->
     <script src="js/imagesloaded.pkgd.js"></script>
     <script src="js/masonry.pkgd.js"></script>
 
     <!-- Self -->
     <script src="js/home.js"></script>
+
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'showImageNumberLabel': false,
+        'fitImagesInViewport': true,
+
+      })
+    </script>
 
   </body>
 </html>

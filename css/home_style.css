@@ -113,7 +113,7 @@ a > img {
 
 .overlay_text {
   color: white;
-  font-size: 50px;
+  font-size: 4vw;
   position: absolute;
   top: 50%;
   left: 50%;

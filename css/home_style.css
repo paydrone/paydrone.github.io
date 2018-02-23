@@ -113,7 +113,7 @@ a > img {
 
 .overlay_text {
   color: white;
-  font-size: 20px;
+  font-size: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,6 +122,7 @@ a > img {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   text-transform:uppercase;
+  font-weight: 100;
 }
 
 a {

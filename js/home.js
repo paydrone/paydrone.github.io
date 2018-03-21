@@ -8,4 +8,5 @@ var $grid = $('.grid').masonry({
 // layout Masonry after each image loads
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
+  $("grid-item").fadeIn(900);
 });

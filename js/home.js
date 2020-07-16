@@ -1,4 +1,4 @@
-$(function(){$('#navi').load('naviTemplate.html');})
+$('#navi').load('naviTemplate.html');
 
 var filename = location.pathname.split('/').slice(-1)[0]
 filename = filename.substring(0, filename.indexOf('.'))

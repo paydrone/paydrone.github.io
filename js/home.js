@@ -5,7 +5,7 @@ filename = filename.substring(0, filename.indexOf('.'))
 var quantity = parseInt($('#gridItems').attr('quantity'));
 console.log(quantity);
 
-for (i=1; i<quantity; i++) {
+for (i=1; i<=quantity; i++) {
     $('#gridItems').append(
         `<div class='grid-item'>
           <a href='images/`+filename+`_fullsize/`+i+`.jpg' data-fancybox='`+filename+`'>

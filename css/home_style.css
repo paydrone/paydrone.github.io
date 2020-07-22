@@ -33,6 +33,12 @@ html { overflow-y: scroll; }
 
 }
 
+.no-style-link:hover {
+    text-decoration: none;
+    border: 0 none;
+    color: inherit;
+}
+
 /* CSS Fade */
 a > img {
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */

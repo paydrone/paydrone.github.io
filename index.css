@@ -1,0 +1,60 @@
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+}
+
+.blackpage {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: left;
+    align-self: center;
+    align-items: center;
+}
+
+.pedrocontent {
+    display: flex;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    padding-left: 100px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.profilephoto {
+    padding-right: 56px;
+
+    img {
+        height: 170px;
+        border-radius: 50%;
+    }
+}
+
+.nameAndIconsFlex {
+    display: flex;
+    align-items: center;
+}
+
+.nameAndIcons {
+
+}
+
+.icons {
+    padding-top: 8px;
+
+    a {
+        cursor: n-resize;
+    }
+
+    img {
+        height: 29px;
+        padding-right: 10px;
+    }
+}

@@ -2,79 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Pedro Rodrigues</title>
+    <link rel="stylesheet" href="index.css">
 
-    <!-- Bootstrap -->
-<!-- UPDATE BOOTSTRAP -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/landing_style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <div class="container">
-      <div class="landing-text">
-        <div class="row">
-          <div class="col-lg-4"></div>
-
-          <div class="col-lg-4">
-            <h3>Pedro Rodrigues</h3>
-            <h6>Photographer / Software Developer</h6>
-            <div class="landing-text-buttons">
-              <a href="home.html">Photo</a>
-              <a href="https://github.com/paydrone">Software</a>
+    <div class="blackpage">
+      <div class="pedrocontent">
+        <div class="profilephoto">
+          <img src="assets/pedroface.jpg" alt="">
+        </div>
+        <div class="nameAndIconsFlex">
+          <div class="nameAndIcons">
+            <p>pedro rodrigues</p>
+            <div class="icons">
+              <a href="https://www.instagram.com/paydrone/"><img src="assets/icons/instagram.svg"></a>
+              <a href="https://www.linkedin.com/in/pedro-rodrig/"><img src="assets/icons/linkedin.svg"></a>
+              <a href="https://www.github.com/paydrone"><img src="assets/icons/github.svg"></a>
+              <a href="https://www.linkedin.com/in/pedro-rodrig/"><img src="assets/icons/windowplane.svg"></a>
+              <!-- fix this link -->
             </div>
-            <div class="landing-text-buttons">
-              <a href="https://www.linkedin.com/in/pedro-rodrig/">LinkedIn</a>
-            </div>
-
           </div>
-
-          <div class="col-lg-4"></div>
         </div>
       </div>
-
     </div>
 
-<!-- UPDATE THIS -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- BackStrech plugin, for backgrounds -->
-    <script src="js/jquery.backstretch.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script> -->
 
     <script>
-      $(document).ready(function(){
-
-        $.backstretch([
-            { url: 'landing_pictures/1.jpg' },
-            { url: 'landing_pictures/2.jpg', alignY: .4 },
-            { url: 'landing_pictures/3.jpg' },
-            { url: 'landing_pictures/4.jpg', alignY: .3, alignX: .5  },
-            { url: 'landing_pictures/5.jpg' },
-            { url: 'landing_pictures/6.jpg' },
-            { url: 'landing_pictures/7.jpg' },
-            { url: 'landing_pictures/8.jpg' },
-            { url: 'landing_pictures/9.jpg', alignY: .3 },
-            { url: 'landing_pictures/10.jpg' },
-            { url: 'landing_pictures/11.jpg' },
-            { url: 'landing_pictures/13.jpg' },
-            { url: 'landing_pictures/14.jpg' },
-            { url: 'landing_pictures/15.jpg' },
-            { url: 'landing_pictures/16.jpg' },
-            { url: 'landing_pictures/17.jpg' }
-          ], {duration: 1500, transition: 'fade', transitionDuration: 1000});
-
-        });
-
-      </script>
-
+      // $(document).ready(function(){
+      //   $.backstretch([
+      //       { url: 'landing_pictures/1.jpg' },
+      //     ], {duration: 10000, transition: 'fade', transitionDuration: 1000});
+      //   });
+      // </script>
   </body>
 </html>

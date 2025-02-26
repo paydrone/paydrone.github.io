@@ -1,0 +1,50 @@
+html {
+    background-image: linear-gradient(45deg, #58D7FA, #A6E3F4);
+    background-color: #58D7FA;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.stuff {
+    align-items: center;
+    align-content: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100px;;
+    }
+}
+
+.title {
+    color: white;
+    font-family: "Roboto";
+    font-weight: 500;
+    text-align: center;
+}
+
+.mockups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+}
+
+#map {
+    max-height: 300px;
+}
+#window {
+    max-width: 300px;
+}
